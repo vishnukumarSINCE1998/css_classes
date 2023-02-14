@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            .box{
+                height:200px;
+                width:200px;
+                background-color:blue;
+            }
+            @media (max-width:480px) {
+                .box{
+                    background-color:black
+                }
+            }
+            @media (min-width:481px) and (max-width:767px) {
+                .box{
+                    background-color: chartreuse;
+                }
+            }
+            @media (min-width:768px) and (max-width:1020px) {
+                .box{
+                    background-color: crimson;
+                }
+            }
+            @media (min-width:1021px) and (max-width:1280px) {
+                .box{
+                    background-color: darkred;
+                }
+            }
+            @media (min-width:1281px) {
+                .box{
+                    background-color: purple;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+       <div class="box"></div>
+       </div> 
+    </body>
+</html>

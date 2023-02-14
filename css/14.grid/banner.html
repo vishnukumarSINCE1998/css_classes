@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding:0;
+                margin:0;
+            }
+            .header{grid-area:header;}
+            .banner{grid-area:banner;}
+            .sidebar{grid-area:sidebar;}
+            .main{grid-area:main;}
+            .footer{grid-area:footer;}
+
+            .container{
+                display:grid;
+                gap:5px;
+                background-color: black;
+                grid-template-areas: 'header header header header'
+                'banner banner banner banner' 
+                'sidebar main main main'
+                'footer footer footer footer';
+            }
+            .header{
+                background-color:chocolate;
+                height:100px;
+            }
+            .banner{
+                background-color:brown;
+                height:200px;
+            }
+            .sidebar{
+                background-color:darkgreen;
+                height:600px;
+
+            }
+            .main{
+                background-color: darkblue;
+                height: 600px;
+            }
+            .footer{
+                background-color:chocolate;
+                height:100px;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header"></div>
+            <div class="banner"></div>
+            <div class="sidebar"></div>
+            <div class="main"></div>
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>-
